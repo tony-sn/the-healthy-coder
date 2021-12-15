@@ -1,0 +1,242 @@
+{
+  "week": {
+    "monday": {
+      "meals": [
+        {
+          "id": 655786,
+          "imageType": "jpg",
+          "title": "Persimmons Pumpkin Orange Smoothie With Chia Seeds",
+          "readyInMinutes": 45,
+          "servings": 3,
+          "sourceUrl": "https://spoonacular.com/persimmons-pumpkin-orange-smoothie-with-chia-seeds-655786"
+        },
+        {
+          "id": 645856,
+          "imageType": "jpg",
+          "title": "Grilled Salmon With Cherry, Pineapple, Mango Salsa",
+          "readyInMinutes": 15,
+          "servings": 2,
+          "sourceUrl": "https://spoonacular.com/grilled-salmon-with-cherry-pineapple-mango-salsa-645856"
+        },
+        {
+          "id": 1024129,
+          "imageType": "jpg",
+          "title": "Ultimate Fried Chicken (Gluten-Free)",
+          "readyInMinutes": 45,
+          "servings": 4,
+          "sourceUrl": "https://lexiscleankitchen.com/gluten-free-fried-chicken/"
+        }
+      ],
+      "nutrients": {
+        "calories": 2215.27,
+        "protein": 77.18,
+        "fat": 148.09,
+        "carbohydrates": 172.08
+      }
+    },
+    "tuesday": {
+      "meals": [
+        {
+          "id": 1100990,
+          "imageType": "jpg",
+          "title": "Blueberry, Chocolate & Cocao Superfood Pancakes - Gluten-Free/Paleo/Vegan",
+          "readyInMinutes": 30,
+          "servings": 2,
+          "sourceUrl": "https://spoonacular.com/blueberry-chocolate-cocao-superfood-pancakes-gluten-free-paleo-vegan-1100990"
+        },
+        {
+          "id": 618475,
+          "imageType": "jpg",
+          "title": "Nut-Free Granola from Against All Grain",
+          "readyInMinutes": 25,
+          "servings": 3,
+          "sourceUrl": "http://weelicious.com/2014/10/30/nut-free-granola-recipe/"
+        },
+        {
+          "id": 433107,
+          "imageType": "jpg",
+          "title": "Smoky Grilled Shrimp for Two",
+          "readyInMinutes": 20,
+          "servings": 2,
+          "sourceUrl": "http://www.tasteofhome.com/Recipes/smoky-grilled-shrimp-for-two"
+        }
+      ],
+      "nutrients": {
+        "calories": 2143.3,
+        "protein": 46.15,
+        "fat": 129.72,
+        "carbohydrates": 208.28
+      }
+    },
+    "wednesday": {
+      "meals": [
+        {
+          "id": 655786,
+          "imageType": "jpg",
+          "title": "Persimmons Pumpkin Orange Smoothie With Chia Seeds",
+          "readyInMinutes": 45,
+          "servings": 3,
+          "sourceUrl": "https://spoonacular.com/persimmons-pumpkin-orange-smoothie-with-chia-seeds-655786"
+        },
+        {
+          "id": 878480,
+          "imageType": "jpg",
+          "title": "One Pan Moroccan Lemon Chicken",
+          "readyInMinutes": 15,
+          "servings": 4,
+          "sourceUrl": "http://www.jessicagavin.com/spiced-lemon-chicken/"
+        },
+        {
+          "id": 9003,
+          "imageType": "jpg",
+          "title": "Roasted Pork Belly with Late-Harvest Peaches and Arugula",
+          "readyInMinutes": 250,
+          "servings": 8,
+          "sourceUrl": "http://www.myrecipes.com/recipe/roasted-pork-belly-peaches-arugula-50400000115382/"
+        }
+      ],
+      "nutrients": {
+        "calories": 2101.31,
+        "protein": 53.67,
+        "fat": 176.95,
+        "carbohydrates": 88.4
+      }
+    },
+    "thursday": {
+      "meals": [
+        {
+          "id": 655786,
+          "imageType": "jpg",
+          "title": "Persimmons Pumpkin Orange Smoothie With Chia Seeds",
+          "readyInMinutes": 45,
+          "servings": 3,
+          "sourceUrl": "https://spoonacular.com/persimmons-pumpkin-orange-smoothie-with-chia-seeds-655786"
+        },
+        {
+          "id": 1517859,
+          "imageType": "jpg",
+          "title": "Paleo Chicken Tenders",
+          "readyInMinutes": 30,
+          "servings": 2,
+          "sourceUrl": "https://lexiscleankitchen.com/paleo-chicken-tenders/"
+        },
+        {
+          "id": 649487,
+          "imageType": "jpg",
+          "title": "Lemon - Garlic Chicken",
+          "readyInMinutes": 45,
+          "servings": 1,
+          "sourceUrl": "https://spoonacular.com/lemon-garlic-chicken-649487"
+        }
+      ],
+      "nutrients": {
+        "calories": 2301.76,
+        "protein": 167.79,
+        "fat": 141.85,
+        "carbohydrates": 103.4
+      }
+    },
+    "friday": {
+      "meals": [
+        {
+          "id": 655786,
+          "imageType": "jpg",
+          "title": "Persimmons Pumpkin Orange Smoothie With Chia Seeds",
+          "readyInMinutes": 45,
+          "servings": 3,
+          "sourceUrl": "https://spoonacular.com/persimmons-pumpkin-orange-smoothie-with-chia-seeds-655786"
+        },
+        {
+          "id": 890192,
+          "imageType": "jpg",
+          "title": "No-Bake Lime Tarts (Gluten Free, Paleo + Vegan)",
+          "readyInMinutes": 30,
+          "servings": 3,
+          "sourceUrl": "http://www.bakerita.com/no-bake-lime-tarts-gluten-free-paleo-vegan/"
+        },
+        {
+          "id": 53728,
+          "imageType": "jpg",
+          "title": "Coconut Pineapple Upside Down Cake",
+          "readyInMinutes": 50,
+          "servings": 8,
+          "sourceUrl": "http://nourishedkitchen.com/grain-free-coconut-pineapple-upside-down-cake/"
+        }
+      ],
+      "nutrients": {
+        "calories": 2245.85,
+        "protein": 41.33,
+        "fat": 163.85,
+        "carbohydrates": 185.94
+      }
+    },
+    "saturday": {
+      "meals": [
+        {
+          "id": 1096262,
+          "imageType": "jpg",
+          "title": "Coconut Cassava Pancakes",
+          "readyInMinutes": 45,
+          "servings": 3,
+          "sourceUrl": "https://spoonacular.com/coconut-cassava-pancakes-1096262"
+        },
+        {
+          "id": 618475,
+          "imageType": "jpg",
+          "title": "Nut-Free Granola from Against All Grain",
+          "readyInMinutes": 25,
+          "servings": 3,
+          "sourceUrl": "http://weelicious.com/2014/10/30/nut-free-granola-recipe/"
+        },
+        {
+          "id": 894915,
+          "imageType": "jpg",
+          "title": "Paleo Lemon Bars [VIDEO]",
+          "readyInMinutes": 45,
+          "servings": 4,
+          "sourceUrl": "http://lexiscleankitchen.com/2017/06/05/lemon-bars/"
+        }
+      ],
+      "nutrients": {
+        "calories": 2345.16,
+        "protein": 46.98,
+        "fat": 157.79,
+        "carbohydrates": 214.77
+      }
+    },
+    "sunday": {
+      "meals": [
+        {
+          "id": 1100990,
+          "imageType": "jpg",
+          "title": "Blueberry, Chocolate & Cocao Superfood Pancakes - Gluten-Free/Paleo/Vegan",
+          "readyInMinutes": 30,
+          "servings": 2,
+          "sourceUrl": "https://spoonacular.com/blueberry-chocolate-cocao-superfood-pancakes-gluten-free-paleo-vegan-1100990"
+        },
+        {
+          "id": 1128864,
+          "imageType": "jpg",
+          "title": "Jibarito (Paleo + Whole30)",
+          "readyInMinutes": 25,
+          "servings": 5,
+          "sourceUrl": "https://realsimplegood.com/jibarito-recipe/"
+        },
+        {
+          "id": 1024129,
+          "imageType": "jpg",
+          "title": "Ultimate Fried Chicken (Gluten-Free)",
+          "readyInMinutes": 45,
+          "servings": 4,
+          "sourceUrl": "https://lexiscleankitchen.com/gluten-free-fried-chicken/"
+        }
+      ],
+      "nutrients": {
+        "calories": 2380.83,
+        "protein": 71.85,
+        "fat": 154.0,
+        "carbohydrates": 199.21
+      }
+    }
+  }
+}
