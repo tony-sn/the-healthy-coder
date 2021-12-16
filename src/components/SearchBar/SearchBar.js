@@ -14,7 +14,7 @@ export default function SearchBar({ placeholder, exercises }) {
     const newFilter = exercises.filter(exercise => {
       return (
         exercise.name.toLowerCase().includes(searchWord.toLowerCase()) ||
-        exercise.muscle_group.toLowerCase().includes(searchWord.toLowerCase())
+        Object.values(exercise.muscle_group).some(value => value.toLowerCase().includes(searchWord.toLowerCase()))
       )
     })
 
