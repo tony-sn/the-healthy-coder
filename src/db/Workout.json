@@ -1,0 +1,134 @@
+{
+  "exercises": [
+    {
+      "id": 1,
+      "name": "Dumbbell Chest Fly",
+      "muscle_group": ["Chest"],
+      "reps": 12,
+      "session": 3,
+      "weight": "10kg"
+    },
+    {
+      "id": 2,
+      "name": "Abs Crunches",
+      "muscle_group": ["Abs"],
+      "reps": 15,
+      "session": 4,
+      "weight": "Bodyweight"
+    },
+    {
+      "id": 3,
+      "name": "Russian Twist",
+      "muscle_group": ["Abs"],
+      "reps": 15,
+      "session": 4,
+      "weight": "Bodyweight"
+    },
+    {
+      "id": 4,
+      "name": "Dumbbell Lunges",
+      "muscle_group": ["Legs"],
+      "reps": 12,
+      "session": 3,
+      "weight": "10kg"
+    },
+    {
+      "id": 5,
+      "name": "Dumbbell Upper Chest Fly",
+      "muscle_group": ["Chest"],
+      "reps": 10,
+      "session": 3,
+      "weight": "12kg"
+    },
+    {
+      "id": 6,
+      "name": "Dumbbell Lower Chest Fly",
+      "muscle_group": ["Chest"],
+      "reps": 10,
+      "session": 3,
+      "weight": "12kg"
+    },
+    {
+      "id": 7,
+      "name": "Dumbbell Overhead",
+      "muscle_group": [
+        "Chest",
+        "Arms"
+      ],
+      "reps": 12,
+      "session": 3,
+      "weight": "10kg"
+    },
+    {
+      "id": 8,
+      "name": "Barbell Overhead",
+      "muscle_group": [
+        "Chest",
+        "Arms"
+      ],
+      "reps": 10,
+      "session": 3,
+      "weight": "20kg"
+    },
+    {
+      "id": 9,
+      "name": "Dumbbell Wide Open Arms",
+      "muscle_group": ["Shoulders"],
+      "reps": 12,
+      "session": 3,
+      "weight": "8kg"
+    },
+    {
+      "id": 10,
+      "name": "Standing Calf Dumbbell",
+      "muscle_group": ["Legs"],
+      "reps": 12,
+      "session": 3,
+      "weight": "6kg"
+    },
+    {
+      "id": 11,
+      "name": "Dumbbell Bicep Curl",
+      "muscle_group": ["Arms"],
+      "reps": 12,
+      "session": 3,
+      "weight": "10kg"
+    },
+    {
+      "id": 12,
+      "name": "Dumbbell Tricep Curl",
+      "muscle_group": ["Arms"],
+      "reps": 12,
+      "session": 3,
+      "weight": "8kg"
+    },
+    {
+      "id": 13,
+      "name": "Burpee Jump",
+      "muscle_group": ["Body"],
+      "reps": 10,
+      "session": 6,
+      "weight": "Bodyweight"
+    },
+    {
+      "id": 14,
+      "name": "High Knee Run",
+      "muscle_group": ["Legs"],
+      "reps": 30,
+      "session": 1,
+      "weight": "Bodyweight"
+    },
+    {
+      "id": 15,
+      "name": "Push-up",
+      "muscle_group": [
+        "Chest",
+        "Arms",
+        "Shoulders"
+      ],
+      "reps": 10,
+      "session": 8,
+      "weight": "Bodyweight"
+    }
+  ]
+}
