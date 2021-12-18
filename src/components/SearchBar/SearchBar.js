@@ -14,7 +14,7 @@ export default function SearchBar({ placeholder, exercises }) {
     const newFilter = exercises.filter(exercise => {
       return (
         exercise.name.toLowerCase().includes(searchWord.toLowerCase()) ||
-        Object.values(exercise.muscle_group).some(value => value.toLowerCase().includes(searchWord.toLowerCase()))
+        Object.values(exercise.muscle_group).some(muscle => muscle.toLowerCase().includes(searchWord.toLowerCase()))
       )
     })
 
@@ -49,7 +49,7 @@ export default function SearchBar({ placeholder, exercises }) {
       </div>
       {filteredData.length !== 0 && (
         <div className="dataResult">
-          {filteredData.slice(0, 15).map((value, key) => {
+          {filteredData.slice(0, 15).map((value) => {
             return (
               <div className="dataItem" key={value.id}>
                 <p>{value.name}</p>
