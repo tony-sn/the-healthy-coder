@@ -1,16 +1,12 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
+
 import TheHealthyCoder from "../../assets/img/TheHealthyCoderLighterLogo.svg"
-// import TheHealthyCoder from "../../assets/img/TheHealthyCoderLogo.png"
 import ReorderIcon from "@material-ui/icons/Reorder"
 import HomeIcon from "@material-ui/icons/Home"
 import InfoIcon from "@material-ui/icons/Info"
 import FitnessCenterIcon from "@material-ui/icons/FitnessCenter"
 import RestaurantIcon from "@material-ui/icons/Restaurant"
-
-// import Container from "react-bootstrap/Container"
-
-// import { useMediaQuery } from "react-responsive"
 
 import "./NavBar.css"
 

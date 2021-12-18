@@ -1,3 +1,8 @@
+:root{
+  --bg-color-blue: #00c4cc;
+  --bg-color-light-blue: #b0f8f3;
+}
+
 body {
   margin: 0;
   padding: 0;
