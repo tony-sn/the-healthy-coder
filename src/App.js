@@ -8,10 +8,6 @@ import NavBar from "./components/NavBar/NavBar"
 import About from "./pages/About"
 import Workout from "./pages/Workout"
 
-// TODO: Create Workout Page and link to home page
-// TODO : Workout search function, user self create workout session
-// TODO : Route for all pages
-
 function App() {
   return (
     <div className="App">

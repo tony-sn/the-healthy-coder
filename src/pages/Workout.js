@@ -1,6 +1,10 @@
 import React, { useState } from "react"
+// import { Link } from "react-router-dom"
+
 import SearchBar from "../components/SearchBar/SearchBar"
 import ExerciseData from "../db/Workout.json"
+
+import HookForm from "../components/HookForm/HookForm"
 
 import Button from "react-bootstrap/Button"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -28,13 +32,24 @@ function Workout() {
         <h2 className="text-center mt-5 mb-3">Or create your own workout </h2>
 
         <div className="wrapper">
-          <Button variant="primary" onClick={handleSearchBar} className="m-auto d-block">
+          <Button
+            variant="primary"
+            onClick={handleSearchBar}
+            className="m-auto d-block"
+          >
             Create
           </Button>
         </div>
 
         <hr />
       </div>
+      {
+        useSearchBar === false && <HookForm/>
+      }
+
+
+
+
 
 
     </div>
