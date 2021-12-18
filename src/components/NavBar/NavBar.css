@@ -1,0 +1,108 @@
+.myNavbar {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(90deg,#00c4cc,#7d2ae8);
+  display: flex;
+  flex-direction: row;
+}
+
+.myNavbar .container {
+  display: flex;
+}
+
+.myNavbar .leftSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+}
+
+.myNavbar .leftSide img {
+  width: 70px;
+}
+
+.myNavbar .rightSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myNavbar a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.myNavbar .rightSide button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.myNavbar .rightSide svg {
+  font-size: 40px;
+}
+
+.myNavbar #open {
+  padding-left: 0px;
+}
+
+.myNavbar #open img {
+  display: none;
+}
+
+.myNavbar #close img {
+  display: inherit;
+}
+
+.myNavbar #open .hiddenLinks {
+  display: inherit;
+  margin-left: 30px;
+}
+
+.myNavbar #close .hiddenLinks {
+  display: none;
+}
+
+.myNavbar #open a {
+  width: 70px;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  .myNavbar .rightSide a {
+    width: 70px;
+  }
+  .myNavbar .leftSide {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .myNavbar .rightSide a {
+    display: none;
+  }
+
+  .myNavbar .rightSide {
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+
+  .myNavbar .rightSide button {
+    display: inherit;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .myNavbar .rightSide button {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+}
