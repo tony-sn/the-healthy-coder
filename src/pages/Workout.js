@@ -9,8 +9,8 @@ import HookForm from "../components/HookForm/HookForm"
 import Button from "react-bootstrap/Button"
 import "bootstrap/dist/css/bootstrap.min.css"
 
-// TODO: Use SearchBar result to create a workout exercise, using given data
-// TODO : Or let user manually create an exercise using form
+// TODO: Style HookForm
+// TODO :
 
 function Workout() {
   const [useSearchBar, setUseSearchBar] = useState(true)
@@ -29,7 +29,7 @@ function Workout() {
           exercises={ExerciseData.exercises}
         />
 
-        <h2 className="text-center mt-5 mb-3">Or create your own workout </h2>
+        <h2 className="text-center mt-5 mb-3">Or create your own exercise </h2>
 
         <div className="wrapper">
           <Button
@@ -43,14 +43,10 @@ function Workout() {
 
         <hr />
       </div>
+
       {
         useSearchBar === false && <HookForm/>
       }
-
-
-
-
-
 
     </div>
   )

@@ -9,21 +9,21 @@
 }
 
 .search input {
-  background-color: var(--bg-color-light-blue);
+  background-color: var(--form-color-gray);
   border: 0;
   border-radius: 2px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
-  font-size: 18px;
+  font-size: 16px;
   padding: 15px;
-  height: 30px;
+  height: 40px;
   width: 300px;
 }
 
 .searchIcon {
-  height: 30px;
-  width: 30px;
-  background-color: var(--bg-color-light-blue);
+  height: 40px;
+  width: 40px;
+  background-color: var(--form-color-gray);
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -40,7 +40,7 @@ input:focus {
   margin-top: 5px;
   width: 330px;
   height: 200px;
-  background-color: var(--bg-color-light-blue);
+  background-color: var(--form-color-gray);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
   overflow-y: auto;

@@ -1,0 +1,54 @@
+.WorkoutForm form {
+  max-width: 330px;
+  margin: 50px auto;
+}
+
+.WorkoutForm select, .WorkoutForm input {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.WorkoutForm form p {
+  color: red;
+}
+
+select option {
+  background-color: var(--form-color-gray);
+  text-shadow: 0 1px 0 var(--form-color-gray);
+}
+
+.WorkoutForm .input {
+  background-color: var(--form-color-gray);
+}
+
+.WorkoutForm label, .WorkoutForm section > label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 13px;
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.WorkoutForm input[type="submit"], .WorkoutForm .btn {
+  position: relative;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 20px;
+  padding: 8.5px;
+  font-size: 16px;
+  letter-spacing: 4px;
+  display: block;
+  appearance: none;
+  border-radius: 4px;
+  width: 100%;
+  transition: 0.4s all;
+}
+
