@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import SearchBar from "../components/SearchBar/SearchBar"
 import ExerciseData from "../db/Workout.json"
 
-import HookForm from "../components/HookForm/HookForm"
+import HookForm from "../components/HookForm/WorkoutForm"
 
 import Button from "react-bootstrap/Button"
 import "bootstrap/dist/css/bootstrap.min.css"

@@ -5,7 +5,7 @@ function About() {
     <div className="about container">
       <h1 className="title aboutTitle">About</h1>
 
-      <div>
+      <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut porro
         accusamus tempora obcaecati perferendis tenetur quia aliquam facere
         inventore fugiat at autem odit laboriosam minima ad itaque, quidem
@@ -18,7 +18,7 @@ function About() {
         consequuntur saepe iusto iure optio, eaque nobis quidem, mollitia
         recusandae molestiae enim cumque velit repellendus aliquam? Quae
         consequatur labore quaerat.
-      </div>
+      </p>
     </div>
   )
 }
