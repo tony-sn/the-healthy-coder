@@ -7,6 +7,7 @@ import NavBar from "./components/NavBar/NavBar"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Workout from "./pages/Workout"
+import Meals from "./pages/Meals"
 
 function App() {
   return (
@@ -19,6 +20,12 @@ function App() {
           <Route path="/about" component={About}/>
 
           <Route path="/workout" component={Workout}/>
+
+          <Route path="/meals" component={Meals}/>
+
+
+
+
 
 
         </Switch>

@@ -1,4 +1,6 @@
 @import "./Home.css";
+@import "./Meals.css";
+@import "./Workout.css";
 
 .App {
   width: 100%;
@@ -15,6 +17,11 @@
 
 .about.container {
   width: 65%;
+}
+
+.container .title{
+  font-family: cursive;
+  font-size: 50px;
 }
 
 body h1{

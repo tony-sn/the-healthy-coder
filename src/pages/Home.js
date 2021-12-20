@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="home container">
       {" "}
-      <h1>The Healthy Coder</h1>
+      <h1 className="title homeTitle">The Healthy Coder</h1>
     </div>
   )
 }

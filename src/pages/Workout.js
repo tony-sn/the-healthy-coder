@@ -9,7 +9,7 @@ import HookForm from "../components/HookForm/HookForm"
 import Button from "react-bootstrap/Button"
 import "bootstrap/dist/css/bootstrap.min.css"
 
-// TODO: Style HookForm
+// TODO: Save state and convert data to display
 // TODO :
 
 function Workout() {
@@ -22,6 +22,7 @@ function Workout() {
   return (
     <div className="Workout">
       <div className={useSearchBar ? "show" : "hide"}>
+
         <h2 className="text-center">Choose your first workout</h2>
 
         <SearchBar

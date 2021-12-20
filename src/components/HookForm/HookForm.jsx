@@ -19,8 +19,8 @@ function HookForm() {
   return (
     <div className="WorkoutForm">
       <form onSubmit={handleSubmit(onSubmit)}>
-
-        <input className="input"
+        <input
+          className="input"
           {...register("name", { required: "This is required!" })}
           placeholder="Exercise Name"
         ></input>
@@ -36,10 +36,21 @@ function HookForm() {
           })}
         </select>
 
-        <input className="input" {...register("reps", { required: "This is required!", valueAsNumber: true, min: {value: 5, message: "Number must be more than 5"}})} placeholder="Number of reps"></input>
+        <input
+          className="input"
+          {...register("reps", {
+            required: "This is required!",
+            valueAsNumber: true,
+            min: { value: 5, message: "Number must be more than 5" },
+          })}
+          placeholder="Number of reps"
+        ></input>
         {<p>{errors.reps?.message}</p>}
 
-        <select {...register("session", {required: true, valueAsNumber: true})} defaultValue="Session">
+        <select
+          {...register("session", { required: true, valueAsNumber: true })}
+          defaultValue="Session"
+        >
           <option disabled>Session</option>
           <option>1</option>
           <option>2</option>
