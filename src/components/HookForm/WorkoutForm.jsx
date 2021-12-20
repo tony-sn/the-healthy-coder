@@ -17,7 +17,7 @@ function HookForm() {
   const onSubmit = data => console.log(data)
 
   return (
-    <div className="HookForm">
+    <div className="HookForm WorkoutForm">
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           className="input"

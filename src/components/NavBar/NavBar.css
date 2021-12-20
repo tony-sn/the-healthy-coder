@@ -6,11 +6,11 @@
   flex-direction: row;
 }
 
-.myNavbar .container {
+.myNavbar .container, .myFooter .container {
   display: flex;
 }
 
-.myNavbar .leftSide {
+.myNavbar .leftSide, .myFooter .leftSide {
   flex: 50%;
   height: 100%;
   display: flex;
@@ -18,11 +18,11 @@
   padding-left: 150px;
 }
 
-.myNavbar .leftSide img {
+.myNavbar .leftSide img, .myFooter .leftSide img {
   width: 70px;
 }
 
-.myNavbar .rightSide {
+.myNavbar .rightSide, .myFooter .rightSide {
   flex: 50%;
   height: 100%;
   display: flex;
@@ -30,7 +30,7 @@
   justify-content: center;
 }
 
-.myNavbar a {
+.myNavbar a, .myFooter a {
   color: white;
   text-decoration: none;
   margin: 20px;
@@ -73,12 +73,48 @@
   margin: 5px;
 }
 
+.myFooter {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(90deg,#00c4cc,#7d2ae8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.socialMedia svg {
+  color: white;
+  margin: 0 5px 0 3px;
+  font-size: 50px;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.socialMedia svg:hover{
+  color: #0a58ca;
+
+}
+
+.myFooter p {
+  color: white;
+  font-size: 16px;
+}
+
 @media only screen and (max-width: 900px) {
   .myNavbar .rightSide a {
     width: 70px;
   }
-  .myNavbar .leftSide {
+
+  .myNavbar .leftSide, .myFooter .leftSide {
     padding-left: 50px;
+  }
+
+  .myFooter .rightSide a {
+    width: 30px;
   }
 }
 
@@ -87,13 +123,18 @@
     display: none;
   }
 
-  .myNavbar .rightSide {
+  .myNavbar .rightSide{
     justify-content: flex-end;
     padding-right: 50px;
   }
 
   .myNavbar .rightSide button {
     display: inherit;
+  }
+
+  .myFooter .rightSide {
+    justify-content: space-between;
+    padding-right: 20px;
   }
 }
 
