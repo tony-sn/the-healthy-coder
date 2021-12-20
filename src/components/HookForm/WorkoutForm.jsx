@@ -17,7 +17,7 @@ function HookForm() {
   const onSubmit = data => console.log(data)
 
   return (
-    <div className="WorkoutForm">
+    <div className="HookForm">
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           className="input"
@@ -68,6 +68,7 @@ function HookForm() {
           <option value="10kg">10</option>
           <option value="12kg">12</option>
           <option value="15kg">15</option>
+          <option value="bodyweight">Bodyweight</option>
         </select>
 
         <input type="submit" value="Submit" className="btn btn-primary" />

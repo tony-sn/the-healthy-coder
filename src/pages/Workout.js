@@ -9,9 +9,6 @@ import HookForm from "../components/HookForm/WorkoutForm"
 import Button from "react-bootstrap/Button"
 import "bootstrap/dist/css/bootstrap.min.css"
 
-// TODO: Save state and convert data to display
-// TODO :
-
 function Workout() {
   const [useSearchBar, setUseSearchBar] = useState(true)
 

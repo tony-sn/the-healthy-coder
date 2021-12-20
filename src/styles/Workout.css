@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.Workout .wrapper button {
+  font-size: 16px;
+}
+
 .Workout .show h2 {
   font-family: cursive;
 }

@@ -1,7 +1,10 @@
 import React from "react"
-import MealItem from "../components/MealItem"
 import data from "../db/mealPlanExample.json"
 import Spoonacular from "../assets/img/SpoonacularDefaultImage-556x370.jpg"
+
+import MealItem from "../components/MealItem"
+import MealForm from "../components/HookForm/MealForm"
+
 
 function getImageUrl(id) {
   return (
@@ -18,40 +21,51 @@ function showMealItem(mealList) {
 }
 
 function Meals() {
-  const { monday,
-    tuesday,
-    wednesday,
-    thursday,
-    friday,
-    saturday,
-    sunday } = data.week
+  // const { monday,
+  //   tuesday,
+  //   wednesday,
+  //   thursday,
+  //   friday,
+  //   saturday,
+  //   sunday } = data.week
+
+  const {monday, ...week} = data.week
+  console.log(week.tuesday.meals)
 
   return (
     <div className="meals container">
       <h1 className="title mealTitle">Meal Planning</h1>
 
-      <h2 className="title">Monday</h2>
-      <div className="mealList">{showMealItem(monday.meals)}</div>
-
-      <h2 className="title">Tuesday</h2>
-      <div className="mealList">{showMealItem(tuesday.meals)}</div>
-
-      <h2 className="title">Wednesday</h2>
-      <div className="mealList">{showMealItem(wednesday.meals)}</div>
-
-      <h2 className="title">Thursday</h2>
-      <div className="mealList">{showMealItem(thursday.meals)}</div>
-
-      <h2 className="title">Friday</h2>
-      <div className="mealList">{showMealItem(friday.meals)}</div>
-
-      <h2 className="title">Saturday</h2>
-      <div className="mealList">{showMealItem(saturday.meals)}</div>
-
-      <h2 className="title">Sunday</h2>
-      <div className="mealList">{showMealItem(sunday.meals)}</div>
+      <MealForm />
     </div>
   )
 }
 
 export default Meals
+
+
+
+
+
+// **Result Page**
+
+      // <h2 className="title">Monday</h2>
+      // <div className="mealList">{showMealItem(monday.meals)}</div>
+
+      // <h2 className="title">Tuesday</h2>
+      // <div className="mealList">{showMealItem(tuesday.meals)}</div>
+
+      // <h2 className="title">Wednesday</h2>
+      // <div className="mealList">{showMealItem(wednesday.meals)}</div>
+
+      // <h2 className="title">Thursday</h2>
+      // <div className="mealList">{showMealItem(thursday.meals)}</div>
+
+      // <h2 className="title">Friday</h2>
+      // <div className="mealList">{showMealItem(friday.meals)}</div>
+
+      // <h2 className="title">Saturday</h2>
+      // <div className="mealList">{showMealItem(saturday.meals)}</div>
+
+      // <h2 className="title">Sunday</h2>
+      // <div className="mealList">{showMealItem(sunday.meals)}</div>

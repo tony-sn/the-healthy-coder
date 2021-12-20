@@ -1,9 +1,9 @@
-.WorkoutForm form {
+.HookForm form {
   max-width: 330px;
   margin: 50px auto;
 }
 
-.WorkoutForm select, .WorkoutForm input {
+.HookForm select, .HookForm input {
   display: block;
   width: 100%;
   border-radius: 4px;
@@ -13,7 +13,7 @@
   font-size: 16px;
 }
 
-.WorkoutForm form p {
+.HookForm form p {
   color: red;
 }
 
@@ -22,11 +22,11 @@ select option {
   text-shadow: 0 1px 0 var(--form-color-gray);
 }
 
-.WorkoutForm .input {
+.HookForm .input {
   background-color: var(--form-color-gray);
 }
 
-.WorkoutForm label, .WorkoutForm section > label {
+.HookForm label, .HookForm section > label {
   line-height: 2;
   text-align: left;
   display: block;
@@ -37,7 +37,7 @@ select option {
   font-weight: 200;
 }
 
-.WorkoutForm input[type="submit"], .WorkoutForm .btn {
+.HookForm input[type="submit"], .HookForm .btn {
   position: relative;
   text-transform: uppercase;
   border: none;
@@ -52,3 +52,6 @@ select option {
   transition: 0.4s all;
 }
 
+.MealForm .input {
+  width: 300px;
+}

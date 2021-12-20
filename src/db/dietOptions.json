@@ -1,0 +1,40 @@
+{
+  "dietOptions": [
+    {
+      "value": "glutenFree",
+      "label": "Gluten Free"
+    },
+    {
+      "value": "ketogenic",
+      "label": "Ketogenic"
+    },
+    {
+      "value": "vegetarian",
+      "label": "Vegetarian"
+    },
+    {
+      "value": "lactoVegetarian",
+      "label": "Lacto-Vegetarian"
+    },
+    {
+      "value": "pescetarian",
+      "label": "Pescetarian"
+    },
+    {
+      "value": "paleo",
+      "label": "Paleo"
+    },
+    {
+      "value": "primal",
+      "label": "Primal"
+    },
+    {
+      "value": "lowFODMAP",
+      "label": "Low FODMAP"
+    },
+    {
+      "value": "whole30",
+      "label": "Whole30"
+    }
+  ]
+}
