@@ -29,9 +29,6 @@ function Meals() {
   //   saturday,
   //   sunday } = data.week
 
-  const {monday, ...week} = data.week
-  console.log(week.tuesday.meals)
-
   return (
     <div className="meals container">
       <h1 className="title mealTitle">Meal Planning</h1>
