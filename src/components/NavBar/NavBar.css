@@ -89,7 +89,7 @@
 .socialMedia svg {
   color: white;
   margin: 0 5px 0 3px;
-  font-size: 50px;
+  font-size: 45px;
   cursor: pointer;
   transition: all .4s;
 }
@@ -101,7 +101,7 @@
 
 .myFooter p {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 900px) {

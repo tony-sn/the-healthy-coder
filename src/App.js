@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import "./styles/App.css"
 import NavBar from "./components/NavBar/NavBar"
 import Footer from "./components/Footer"
+import MealListing from "./components/MealListing"
+import MealDetail from "./components/MealDetail"
 
 import Home from "./pages/Home"
 import About from "./pages/About"
@@ -23,9 +25,22 @@ function App() {
           <Route path="/workout" component={Workout} />
 
           <Route path="/meals" component={Meals} />
+
+          <Route exact path="/meals/mealplanning" component={MealListing} />
+
+          <Route
+            exact
+            path="/meals/mealplanning/:mealId"
+            component={MealDetail}
+          />
+
+          <Route>404,
+            {" "}
+            Page Not Found!
+          </Route>
         </Switch>
 
-        <Footer/>
+        <Footer />
       </Router>
     </div>
   )
