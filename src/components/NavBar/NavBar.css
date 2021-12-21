@@ -22,12 +22,20 @@
   width: 70px;
 }
 
+.myNavbar .leftSide img {
+  margin-left: 15px;
+}
+
 .myNavbar .rightSide, .myFooter .rightSide {
   flex: 50%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.myNavbar .rightSide a:last-child {
+  margin-left: 20px;
 }
 
 .myNavbar a, .myFooter a {
@@ -44,31 +52,24 @@
   cursor: pointer;
 }
 
-.myNavbar .rightSide svg {
+.myNavbar .leftSide svg {
   font-size: 40px;
 }
 
-.myNavbar #open {
+.myNavbar {
   padding-left: 0px;
 }
 
-.myNavbar #open img {
-  display: none;
-}
-
-.myNavbar #close img {
+.myNavbar img {
   display: inherit;
 }
 
-.myNavbar #open .hiddenLinks {
-  display: inherit;
-}
-
-.myNavbar #close .hiddenLinks {
+.myNavbar .hiddenLinks {
   display: none;
+  margin-left: 10px;
 }
 
-.myNavbar #open a {
+.myNavbar a {
   width: 70px;
   margin: 5px;
 }
@@ -102,6 +103,7 @@
 .myFooter p {
   color: white;
   font-size: 14px;
+  opacity: 1;
 }
 
 @media only screen and (max-width: 900px) {
@@ -116,6 +118,10 @@
   .myFooter .rightSide a {
     width: 30px;
   }
+
+  .myFooter p{
+    opacity: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -123,13 +129,19 @@
     display: none;
   }
 
+  .myNavbar .hiddenLinks {
+    display: inherit;
+    padding-left: 80px;
+  }
+
+  .myNavbar .hiddenLinks svg {
+    width: 60px;
+    margin: 7px;
+  }
+
   .myNavbar .rightSide{
     justify-content: flex-end;
     padding-right: 50px;
-  }
-
-  .myNavbar .rightSide button {
-    display: inherit;
   }
 
   .myFooter .rightSide {

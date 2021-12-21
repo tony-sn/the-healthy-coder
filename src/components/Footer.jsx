@@ -15,7 +15,7 @@ function Footer() {
           <Link to="/">
             <img src={TheHealthyCoder} alt="Logo" />
           </Link>
-          <p> &copy; The Healthy Coder 2022</p>
+          <p className="copyright"> &copy; The Healthy Coder 2022</p>
         </div>
         <div className="rightSide socialMedia">
           <a href="https://www.facebook.com/"><FacebookIcon/></a>
