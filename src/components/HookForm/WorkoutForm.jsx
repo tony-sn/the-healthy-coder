@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid"
 
 import "./HookForm.css"
 
-function HookForm() {
+function WorkoutForm() {
   const {
     register,
     handleSubmit,
@@ -77,4 +77,4 @@ function HookForm() {
   )
 }
 
-export default HookForm
+export default WorkoutForm

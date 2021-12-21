@@ -1,8 +1,7 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "react-router-dom"
 
 import TheHealthyCoder from "../../assets/img/TheHealthyCoderLighterLogo.svg"
-import ReorderIcon from "@material-ui/icons/Reorder"
 import HomeIcon from "@material-ui/icons/Home"
 import InfoIcon from "@material-ui/icons/Info"
 import FitnessCenterIcon from "@material-ui/icons/FitnessCenter"
@@ -10,17 +9,12 @@ import RestaurantIcon from "@material-ui/icons/Restaurant"
 
 import "./NavBar.css"
 
+
 function NavBar() {
-  const [openLinks, setOpenLinks] = useState(false)
-
-  const handleToggleNav = () => {
-    setOpenLinks(!openLinks)
-  }
-
-  return (
+    return (
     <div className="myNavbar">
       <div className="container">
-        <div className="leftSide" id={openLinks ? "open" : "close"}>
+        <div className="leftSide">
           <Link to="/">
             <img src={TheHealthyCoder} alt="Logo" />
           </Link>
@@ -36,9 +30,6 @@ function NavBar() {
           <Link to="/about">About</Link>
           <Link to="/workout">Workout</Link>
           <Link to="/meals">Meals</Link>
-          <button onClick={handleToggleNav}>
-            <ReorderIcon />
-          </button>
         </div>
       </div>
     </div>

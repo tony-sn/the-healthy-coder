@@ -1,20 +1,24 @@
 import React, { useState } from "react"
 import { useForm } from "react-hook-form"
+import { useHistory } from "react-router-dom"
 import { v4 as uuidv4 } from "uuid"
 import optionData from "../../db/dietOptions.json"
 
 import "./HookForm.css"
 
-function HookForm() {
+function MealForm() {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm()
 
+  const history = useHistory()
+
   const [result, setResult] = useState("")
   const onSubmit = (data, ev) => {
     ev.preventDefault()
+    history.push(`/meals/mealplanning`)
     console.log(data)
   }
 
@@ -52,4 +56,4 @@ function HookForm() {
   )
 }
 
-export default HookForm
+export default MealForm
