@@ -57,8 +57,7 @@ export default function SearchBar({ placeholder, exercises }) {
     const targetExercise = exercises.filter(ex => ex.id === currentId)
     console.log(targetExercise)
     setResult(targetExercise)
-
-  }
+    localStorage.setItem(targetExercise)
 
   }
 
