@@ -11,6 +11,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Workout from "./pages/Workout"
 import Meals from "./pages/Meals"
+import Error404 from "./pages/Error404"
 
 function App() {
   return (
@@ -20,11 +21,11 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
 
-          <Route path="/about" component={About} />
+          <Route exact path="/about" component={About} />
 
-          <Route path="/workout" component={Workout} />
+          <Route exact path="/workout" component={Workout} />
 
-          <Route path="/meals" component={Meals} />
+          <Route exact path="/meals" component={Meals} />
 
           <Route exact path="/meals/mealplanning" component={MealListing} />
 
@@ -34,10 +35,8 @@ function App() {
             component={MealDetail}
           />
 
-          <Route>404,
-            {" "}
-            Page Not Found!
-          </Route>
+          <Route path="*" component={Error404}/>
+
         </Switch>
 
         <Footer />
