@@ -9,3 +9,21 @@
 .Workout h1.title {
   font-family: cursive;
 }
+
+.WorkoutItem {
+  margin-top: 20px;
+  overflow: auto;
+}
+
+button.red.button.removeBtn  {
+  display: block;
+  text-transform: uppercase;
+  margin: 20px auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+
+
+

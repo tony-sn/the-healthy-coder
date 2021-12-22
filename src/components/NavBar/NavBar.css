@@ -6,11 +6,11 @@
   flex-direction: row;
 }
 
-.myNavbar .container, .myFooter .container {
+.myNavbar .container, footer .container {
   display: flex;
 }
 
-.myNavbar .leftSide, .myFooter .leftSide {
+.myNavbar .leftSide, footer .leftSide {
   flex: 50%;
   height: 100%;
   display: flex;
@@ -18,15 +18,15 @@
   padding-left: 150px;
 }
 
-.myNavbar .leftSide img, .myFooter .leftSide img {
+.myNavbar .leftSide img, footer .leftSide img {
   width: 70px;
 }
 
 .myNavbar .leftSide img {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
-.myNavbar .rightSide, .myFooter .rightSide {
+.myNavbar .rightSide, footer .rightSide {
   flex: 50%;
   height: 100%;
   display: flex;
@@ -38,7 +38,7 @@
   margin-left: 20px;
 }
 
-.myNavbar a, .myFooter a {
+.myNavbar a, footer a {
   color: white;
   text-decoration: none;
   margin: 20px;
@@ -75,6 +75,10 @@
 }
 
 .myFooter {
+  margin-top: 60px;
+}
+
+footer {
   width: 100%;
   height: 100px;
   background: linear-gradient(90deg,#00c4cc,#7d2ae8);
@@ -82,8 +86,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  left: 0;
   overflow: hidden;
 }
 
@@ -100,7 +105,7 @@
 
 }
 
-.myFooter p {
+footer p {
   color: white;
   font-size: 14px;
   opacity: 1;
@@ -111,15 +116,15 @@
     width: 70px;
   }
 
-  .myNavbar .leftSide, .myFooter .leftSide {
+  .myNavbar .leftSide, footer .leftSide {
     padding-left: 50px;
   }
 
-  .myFooter .rightSide a {
+  footer .rightSide a {
     width: 30px;
   }
 
-  .myFooter p{
+  footer p{
     opacity: 0;
   }
 }
@@ -144,7 +149,7 @@
     padding-right: 50px;
   }
 
-  .myFooter .rightSide {
+  footer .rightSide {
     justify-content: space-between;
     padding-right: 20px;
   }

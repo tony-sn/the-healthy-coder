@@ -2,6 +2,8 @@
   --bg-color-blue: #00c4cc;
   --bg-color-light-blue: #b0f8f3;
   --form-color-gray: #e9e9ed;
+  --font-color-gray: rgba(0,0,0,.4);
+  --font-color-dark-gray: rgba(0,0,0,.85);
 }
 
 body {
@@ -23,3 +25,7 @@ code {
 body p, body a, body button {
   font-size: 16px;
 }
+
+/* div#root{
+  height: calc(100% - 60px);
+} */

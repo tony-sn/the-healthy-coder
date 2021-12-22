@@ -3,15 +3,10 @@ import "./SearchBar.css"
 
 import SearchIcon from "@material-ui/icons/Search"
 import CloseIcon from "@material-ui/icons/Close"
-import { current } from "@reduxjs/toolkit"
 
-const STORAGE_KEY_PREFIX = "WORKOUT_LIST_WITH_LOCAL_STORAGE"
-const STORAGE_KEY = `${STORAGE_KEY_PREFIX}-workoutList`
-
-export default function SearchBar({ placeholder, exercises }) {
+export default function SearchBar({ placeholder, exercises, handleTargetExercise }) {
   const [filteredData, setFilteredData] = useState([])
   const [wordEntered, setWordEntered] = useState("")
-  const [result, setResult] = useState([])
 
   const handleFilter = ev => {
     const searchWord = ev.target.value
@@ -37,28 +32,11 @@ export default function SearchBar({ placeholder, exercises }) {
     setWordEntered("")
   }
 
-  // function useStateWithLocalStorage(localStorageKey = STORAGE_KEY) {
-  //   const [value, setValue] = useState(
-  //     localStorage.getItem(localStorageKey) || ""
-  //   )
-
-  //   useEffect(() => {
-  //     localStorage.setItem(localStorageKey, value)
-  //   }, [value])
-
-  //   return [value, setValue]
-  // }
-
   function handleDataResult(ev) {
     ev.preventDefault()
     const currentId = parseInt(ev.currentTarget.dataset.value)
-    console.log("currentId", currentId)
-
-    const targetExercise = exercises.filter(ex => ex.id === currentId)
-    console.log(targetExercise)
-    setResult(targetExercise)
-    localStorage.setItem(targetExercise)
-
+    const targetExercise = exercises.find(ex => ex.id === currentId)
+    handleTargetExercise(targetExercise)
   }
 
   return (

@@ -10,20 +10,22 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 function Footer() {
   return (
     <div className="myFooter">
-      <div className="container">
-        <div className="leftSide">
-          <Link to="/">
-            <img src={TheHealthyCoder} alt="Logo" />
-          </Link>
-          <p className="copyright"> &copy; The Healthy Coder 2022</p>
+      <footer>
+        <div className="container">
+          <div className="leftSide">
+            <Link to="/">
+              <img src={TheHealthyCoder} alt="Logo" />
+            </Link>
+            <p className="copyright"> &copy; The Healthy Coder 2022</p>
+          </div>
+          <div className="rightSide socialMedia">
+            <a href="https://www.facebook.com/"><FacebookIcon/></a>
+            <a href="https://www.twitter.com/"><TwitterIcon/></a>
+            <a href="https://www.instagram.com/"><InstagramIcon/></a>
+            <a href="https://www.linkedin.com/"><LinkedInIcon/></a>
+          </div>
         </div>
-        <div className="rightSide socialMedia">
-          <a href="https://www.facebook.com/"><FacebookIcon/></a>
-          <a href="https://www.twitter.com/"><TwitterIcon/></a>
-          <a href="https://www.instagram.com/"><InstagramIcon/></a>
-          <a href="https://www.linkedin.com/"><LinkedInIcon/></a>
-        </div>
-      </div>
+      </footer>
     </div>
   )
 }
