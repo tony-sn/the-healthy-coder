@@ -16,31 +16,33 @@ import Error404 from "./pages/Error404"
 function App() {
   return (
     <div className="App">
-      <Router>
-        <NavBar />
-        <Switch>
-          <Route exact path="/" component={Home} />
+      <div className="content-container">
+        <Router>
+          <NavBar />
+          <div className="content-wrap">
+            <Switch>
+              <Route exact path="/" component={Home} />
 
-          <Route exact path="/about" component={About} />
+              <Route exact path="/about" component={About} />
 
-          <Route exact path="/workout" component={Workout} />
+              <Route exact path="/workout" component={Workout} />
 
-          <Route exact path="/meals" component={Meals} />
+              <Route exact path="/meals" component={Meals} />
 
-          <Route exact path="/meals/mealplanning" component={MealListing} />
+              <Route exact path="/meals/mealplanning" component={MealListing} />
 
-          <Route
-            exact
-            path="/meals/mealplanning/:mealId"
-            component={MealDetail}
-          />
+              <Route
+                exact
+                path="/meals/mealplanning/:mealId"
+                component={MealDetail}
+              />
 
-          <Route path="*" component={Error404}/>
-
-        </Switch>
-
-        <Footer />
-      </Router>
+              <Route path="*" component={Error404} />
+            </Switch>
+          </div>
+          <Footer />
+        </Router>
+      </div>
     </div>
   )
 }

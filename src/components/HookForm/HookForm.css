@@ -50,6 +50,7 @@ select option {
   border-radius: 4px;
   width: 100%;
   transition: 0.4s all;
+  font-weight: 600;
 }
 
 .MealForm .input {

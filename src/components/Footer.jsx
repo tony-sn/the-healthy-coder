@@ -10,7 +10,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 function Footer() {
   return (
     <div className="myFooter">
-      <footer>
+      <footer className="footer--pin">
         <div className="container">
           <div className="leftSide">
             <Link to="/">
@@ -27,6 +27,7 @@ function Footer() {
         </div>
       </footer>
     </div>
+
   )
 }
 

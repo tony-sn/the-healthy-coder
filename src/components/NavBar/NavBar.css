@@ -23,7 +23,7 @@
 }
 
 .myNavbar .leftSide img {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .myNavbar .rightSide, footer .rightSide {
@@ -75,7 +75,10 @@
 }
 
 .myFooter {
-  margin-top: 60px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 footer {
@@ -86,9 +89,6 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   overflow: hidden;
 }
 
