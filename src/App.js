@@ -29,11 +29,11 @@ function App() {
 
               <Route exact path="/meals" component={Meals} />
 
-              <Route exact path="/meals/mealplanning/:targetCalories/:diet" component={MealListing} />
+              <Route exact path="/meals/mealplanning/:targetCalories/:diet/:excluded?" component={MealListing} />
 
               <Route
                 exact
-                path="/meals/mealplanning/:targetCalories/:diet/:mealId"
+                path="/meals/mealplanning/:mealId"
                 component={MealDetail}
               />
 

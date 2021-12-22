@@ -14,7 +14,7 @@ import { Link } from "react-redux"
 
 function MealItem() {
   const week = useSelector(state => state.allMeals.meals.week)
-  const renderList = week.map(day)
+  // const renderList = week.map(day)
 
   return (
     <div className="three column wide">

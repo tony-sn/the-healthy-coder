@@ -21,13 +21,6 @@ function showMealItem(mealList) {
 }
 
 function Meals() {
-  // const { monday,
-  //   tuesday,
-  //   wednesday,
-  //   thursday,
-  //   friday,
-  //   saturday,
-  //   sunday } = data.week
 
   return (
     <div className="meals container">
