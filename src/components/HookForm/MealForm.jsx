@@ -15,10 +15,11 @@ function MealForm() {
 
   const history = useHistory()
 
-  const [result, setResult] = useState("")
+  const [result, setResult] = useState({})
   const onSubmit = (data, ev) => {
     ev.preventDefault()
-    history.push(`/meals/mealplanning`)
+    history.push(`/meals/mealplanning/${data.targetCalories}/${data.diet}`)
+    setResult(data)
     console.log(data)
   }
 
@@ -46,7 +47,7 @@ function MealForm() {
 
         <input
           className="input"
-          {...register("excluded")}
+          {...register("excluded" || null)}
           placeholder="Excluded: e.g shellfish, olives..."
         ></input>
 

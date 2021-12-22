@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import data from "../db/mealPlanExample.json"
 import Spoonacular from "../assets/img/SpoonacularDefaultImage-556x370.jpg"
 

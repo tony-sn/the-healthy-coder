@@ -4,7 +4,7 @@ import "./SearchBar.css"
 import SearchIcon from "@material-ui/icons/Search"
 import CloseIcon from "@material-ui/icons/Close"
 
-export default function SearchBar({ placeholder, exercises, handleTargetExercise }) {
+function SearchBar({ placeholder, exercises, handleTargetExercise }) {
   const [filteredData, setFilteredData] = useState([])
   const [wordEntered, setWordEntered] = useState("")
 
@@ -75,3 +75,5 @@ export default function SearchBar({ placeholder, exercises, handleTargetExercise
     </div>
   )
 }
+
+export default SearchBar

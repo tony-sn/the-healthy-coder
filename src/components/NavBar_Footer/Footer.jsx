@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import TheHealthyCoder from "../assets/img/TheHealthyCoderLogo.png"
+import TheHealthyCoder from "../../assets/img/TheHealthyCoderLogo.png"
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';

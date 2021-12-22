@@ -33,7 +33,7 @@ function Workout() {
   return (
     <div className="Workout">
       <div className="Workout SearchBar">
-        <h1 className="text-center title">Choose Your Workout</h1>
+        <h1 className="text-center title">Workout Planning</h1>
 
         <SearchBar
           placeholder="Enter an exercise/muscle group"

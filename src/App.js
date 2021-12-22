@@ -2,8 +2,8 @@ import React from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 import "./styles/App.css"
-import NavBar from "./components/NavBar/NavBar"
-import Footer from "./components/Footer"
+import NavBar from "./components/NavBar_Footer/NavBar"
+import Footer from "./components/NavBar_Footer/Footer"
 import MealListing from "./components/MealListing"
 import MealDetail from "./components/MealDetail"
 
@@ -29,11 +29,11 @@ function App() {
 
               <Route exact path="/meals" component={Meals} />
 
-              <Route exact path="/meals/mealplanning" component={MealListing} />
+              <Route exact path="/meals/mealplanning/:targetCalories/:diet" component={MealListing} />
 
               <Route
                 exact
-                path="/meals/mealplanning/:mealId"
+                path="/meals/mealplanning/:targetCalories/:diet/:mealId"
                 component={MealDetail}
               />
 
