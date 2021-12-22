@@ -1,5 +1,6 @@
 import React from "react"
 import { useSelector } from "react-redux"
+import { Link } from "react-redux"
 
 // function MealItem({image, title}) {
 //   return (
@@ -12,15 +13,16 @@ import { useSelector } from "react-redux"
 // }
 
 function MealItem() {
-  const meals = useSelector(state => state.allMeals.meals)
-  const { id, title } = meals[0]
+  const week = useSelector(state => state.allMeals.meals.week)
+  const renderList = week.map(day)
+
   return (
     <div className="three column wide">
       <div className="ui link cards">
         <div className="card">
           <div className="image"></div>
           <div className="content">
-            <div className="header">{title}</div>
+            <div className="header">Title</div>
           </div>
         </div>
       </div>
