@@ -15,12 +15,16 @@ function MealForm() {
     formState: { errors },
   } = useForm()
 
+  const capitalise = (str) => {
+    const lower = str.toLowerCase()
+    return str.charAt(0).toUpperCase() + lower.slice(1)
+  }
+
   const onSubmit = (data, ev) => {
     ev.preventDefault()
     history.push(
-      `/meals/mealplanning/${data.targetCalories}/${data.diet}/${
-        data?.excluded || ""
-      }`
+      `/meals/mealplanning/calories${data.targetCalories}-${data.diet}-no${
+        capitalise(data?.excluded) || ""}`
     )
   }
 
