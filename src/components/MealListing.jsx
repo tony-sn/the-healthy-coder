@@ -39,8 +39,6 @@ function MealListing() {
     // eslint-disable-next-line
   }, [params.diet])
 
-  console.log("Meals: ", Object.values(meals))
-
   return (
     <>
       <h1 className="title mealListing">

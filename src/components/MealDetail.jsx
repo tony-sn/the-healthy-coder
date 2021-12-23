@@ -50,7 +50,11 @@ function MealDetail() {
                 <div className="column rp">
                   <h1>{title}</h1>
                   <h2>
-                    <button className="ui teal tag label">
+                    <button
+                      className={`ui tag label ${
+                        spoonacularScore >= 60 ? "teal" : "red"
+                      } `}
+                    >
                       Spoonacular Score: {spoonacularScore}
                     </button>
                   </h2>
