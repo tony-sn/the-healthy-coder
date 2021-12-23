@@ -1,24 +1,5 @@
 import React, { useState } from "react"
-import data from "../db/mealPlanExample.json"
-import Spoonacular from "../assets/img/SpoonacularDefaultImage-556x370.jpg"
-
-import MealItem from "../components/MealItem"
 import MealForm from "../components/HookForm/MealForm"
-
-
-function getImageUrl(id) {
-  return (
-    `https://webknox.com/recipeImages/${id}-556x370.jpg` || `${Spoonacular}`
-  )
-}
-
-function showMealItem(mealList) {
-  return mealList.map(meal => {
-    return (
-      <MealItem key={meal.id} image={getImageUrl(meal.id)} title={meal.title} />
-    )
-  })
-}
 
 function Meals() {
 
@@ -32,10 +13,6 @@ function Meals() {
 }
 
 export default Meals
-
-
-
-
 
 // **Result Page**
 

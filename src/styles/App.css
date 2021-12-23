@@ -1,7 +1,7 @@
 @import "./index.css";
 @import "./Home.css";
 @import "./About.css";
-@import "./Meals.css";
+/* @import "./Meals.css"; */
 @import "./Workout.css";
 
 .App {
@@ -69,4 +69,17 @@ body h1 {
 
 .hide {
   display: none;
+}
+
+.ui.cards > .card > .content {
+  height: 100px;
+}
+
+.ui.grid {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mealListing, .mealDetail h1{
+  font-family: cursive;
 }

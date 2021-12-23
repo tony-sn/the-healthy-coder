@@ -1,33 +1,38 @@
 import React from "react"
 import { useSelector } from "react-redux"
-import { Link } from "react-redux"
+import { Link } from "react-router-dom"
 
-// function MealItem({image, title}) {
-//   return (
-//     <div className="mealItem">
-//       <div style={{ backgroundImage: `url(${image})` }}></div>
-//       <h3>{title}</h3>
+import Spoonacular from "../assets/img/SpoonacularDefaultImage-556x370.jpg"
 
-//     </div>
-//   )
-// }
-
-function MealItem() {
-  const week = useSelector(state => state.allMeals.meals.week)
-  // const renderList = week.map(day)
-
+function getImageUrl(id) {
   return (
-    <div className="three column wide">
-      <div className="ui link cards">
-        <div className="card">
-          <div className="image"></div>
-          <div className="content">
-            <div className="header">Title</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    `https://webknox.com/recipeImages/${id}-556x370.jpg` || `${Spoonacular}`
   )
 }
+
+function MealItem({mealList}) {
+  return mealList.map(day => {
+    return day.meals.map(meal => {
+      const {id, title} = meal
+      return (
+        <div className="column" key={id}>
+          <Link to={`/meals/mealplanning/${id}`}>
+            <div className="ui link cards">
+              <div className="card">
+                <div className="image">
+                  <img src={getImageUrl(id)} alt={title} />
+                </div>
+                <div className="content">
+                  <div className="header">{title}</div>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+      )
+    }) // map 2
+}) // map 1
+} //MealItem
+
 
 export default MealItem

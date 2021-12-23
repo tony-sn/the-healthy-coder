@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
-import { useParams, Link } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { useSelector, useDispatch } from "react-redux"
 import { setMeals } from "../redux/actions/MealActions"
 
@@ -11,14 +11,17 @@ const API_KEY = process.env.REACT_APP_SPOONACULAR_API_KEY
 const API_BASE_URL = "https://api.spoonacular.com/mealplanner/generate"
 
 function MealListing() {
-  const week = useSelector(state => state.allMeals.meals.week)
+  const meals = useSelector(state => state.allMeals.meals)
+
   const dispatch = useDispatch()
   const params = useParams()
-  console.log(params)
 
-  const [data, setData] = useState({})
+  // const [data, setData] = useState({})
+  const [isLoading, setIsLoading] = useState(false)
+  const [isError, setIsError] = useState(false);
 
   const fetchMeals = async (targetCalories, diet, excluded) => {
+    setIsLoading(true)
     const response = await axios
       .get(
         `${API_BASE_URL}?timeFrame=week&targetCalories=${targetCalories}&diet=${diet}&apiKey=${API_KEY}&excluded=${
@@ -26,24 +29,37 @@ function MealListing() {
         }`
       )
       .catch(err => {
-        console.log("Err: ", err)
+        setIsError(true)
       })
-    console.log(response.data)
-    dispatch(setMeals(response.data))
+    console.log("data: ", response.data.week)
+    dispatch(setMeals(response.data.week))
+    // setData(response.data.week)
+    setIsLoading(false)
   }
 
   useEffect(() => {
     fetchMeals(params.targetCalories, params.diet, params.excluded)
-  }, [params.targetCalories])
+  }, [params.diet])
 
-  console.log("Week: ", week)
+  console.log("Meals: ", Object.values(meals))
+
   return (
     <>
-      <h1 className="title mealListing">Meal Listing for</h1>
+      <h1 className="title mealListing">
+        Weekly Meal Planning
+      </h1>
 
-      <div className="ui three column double stackable grid container">
-        <MealItem />
-      </div>
+      {isError && <div>Something went wrong ...</div>}
+
+      {isLoading ? (
+        <div>Loading...</div>
+      ) : (
+        <div className="ui three column double stackable grid container">
+            <MealItem mealList={Object.values(meals)} />
+        </div>
+      )
+      }
+
     </>
   )
 }
