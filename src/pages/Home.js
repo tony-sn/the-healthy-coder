@@ -5,6 +5,7 @@ function Home() {
     <div className="home container">
       {" "}
       <h1 className="title homeTitle">The Healthy Coder</h1>
+
     </div>
   )
 }
