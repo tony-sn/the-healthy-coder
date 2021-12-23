@@ -5,7 +5,7 @@ function About() {
     <div className="about container">
       <h1 className="title aboutTitle">About</h1>
 
-      <p>
+      <p style={{marginTop: "50px"}}>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut porro
         accusamus tempora obcaecati perferendis tenetur quia aliquam facere
         inventore fugiat at autem odit laboriosam minima ad itaque, quidem
@@ -19,6 +19,13 @@ function About() {
         recusandae molestiae enim cumque velit repellendus aliquam? Quae
         consequatur labore quaerat.
       </p>
+
+      <br/>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam inventore quasi. Aliquam omnis consequatur doloremque iusto mollitia quis laboriosam quisquam quaerat in, dolores eius cum vero. Maxime ut similique corrupti repellendus eos quibusdam perferendis dolorem error repudiandae eligendi, odit distinctio molestias facilis corporis voluptas omnis provident ab. Ea asperiores animi consequuntur eaque sequi numquam ab quis nobis unde alias, quisquam earum dignissimos pariatur inventore quos? Dolore, necessitatibus quia nisi sed sunt error quo, fugit cumque, accusamus modi beatae. Ea tempora officiis voluptatum maiores laudantium nihil, hic vel molestias reiciendis nisi repellendus? Ipsum nobis ullam alias corporis fuga architecto consectetur.</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam inventore quasi. Aliquam omnis consequatur doloremque iusto mollitia quis laboriosam quisquam quaerat in, dolores eius cum vero. Maxime ut similique corrupti repellendus eos quibusdam perferendis dolorem error repudiandae eligendi, odit distinctio molestias facilis corporis voluptas omnis provident ab. Ea asperiores animi consequuntur eaque sequi numquam ab quis nobis unde alias, quisquam earum dignissimos pariatur inventore quos? Dolore, necessitatibus quia nisi sed sunt error quo, fugit cumque, accusamus modi beatae. Ea tempora officiis voluptatum maiores laudantium nihil, hic vel molestias reiciendis nisi repellendus? Ipsum nobis ullam alias corporis fuga architecto consectetur.</p>
+
     </div>
   )
 }

@@ -1,5 +1,4 @@
 import React from "react"
-import { useSelector } from "react-redux"
 import { Link } from "react-router-dom"
 
 import Spoonacular from "../assets/img/SpoonacularDefaultImage-556x370.jpg"

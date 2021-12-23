@@ -13,3 +13,9 @@ export const selectedMeal = (meal) => {
     payload: meal,
   }
 }
+
+export const removeSelectedMeal = () => {
+  return {
+    type: ActionType.REMOVE_SELECTED_MEAL,
+  }
+}

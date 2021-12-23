@@ -1,5 +1,4 @@
-import React, { useState } from "react"
-import axios from "axios"
+import React from "react"
 import { useForm } from "react-hook-form"
 import { useHistory } from "react-router-dom"
 import { v4 as uuidv4 } from "uuid"
@@ -9,7 +8,6 @@ import "./HookForm.css"
 
 function MealForm() {
   const history = useHistory()
-  const [params, setParams] = useState({})
 
   const {
     register,
@@ -17,11 +15,13 @@ function MealForm() {
     formState: { errors },
   } = useForm()
 
-
   const onSubmit = (data, ev) => {
     ev.preventDefault()
-    history.push(`/meals/mealplanning/${data.targetCalories}/${data.diet}/${data?.excluded || ""}`)
-    setParams(data)
+    history.push(
+      `/meals/mealplanning/${data.targetCalories}/${data.diet}/${
+        data?.excluded || ""
+      }`
+    )
   }
 
   return (
@@ -30,10 +30,12 @@ function MealForm() {
         <input
           className="input"
           {...register("targetCalories", {
+            required: "This is required",
             valueAsNumber: true,
           })}
           placeholder="Your Target Calories: e.g 2000"
         ></input>
+        {<p>{errors.targetCalories?.message}</p>}
 
         <select {...register("diet", { required: true })}>
           <option disabled>Diet Type</option>

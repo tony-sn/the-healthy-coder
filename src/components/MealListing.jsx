@@ -16,7 +16,6 @@ function MealListing() {
   const dispatch = useDispatch()
   const params = useParams()
 
-  // const [data, setData] = useState({})
   const [isLoading, setIsLoading] = useState(false)
   const [isError, setIsError] = useState(false);
 
@@ -31,14 +30,13 @@ function MealListing() {
       .catch(err => {
         setIsError(true)
       })
-    console.log("data: ", response.data.week)
     dispatch(setMeals(response.data.week))
-    // setData(response.data.week)
     setIsLoading(false)
   }
 
   useEffect(() => {
     fetchMeals(params.targetCalories, params.diet, params.excluded)
+    // eslint-disable-next-line
   }, [params.diet])
 
   console.log("Meals: ", Object.values(meals))
