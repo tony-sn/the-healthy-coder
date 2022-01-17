@@ -22,9 +22,13 @@ function MealForm() {
 
   const onSubmit = (data, ev) => {
     ev.preventDefault()
+    if (isNaN(data.targetCalories)) {
+      document.querySelector(".error-message").innerHTML="Please enter number only"
+      return
+    }
     history.push(
       `/meals/mealplanning/calories${data.targetCalories}-${data.diet}-no${
-        capitalise(data?.excluded) || ""}`
+        capitalise(data?.excluded) || "Excluded"}`
     )
   }
 
@@ -36,10 +40,11 @@ function MealForm() {
           {...register("targetCalories", {
             required: "This is required",
             valueAsNumber: true,
+            min: {value: 1000, message: 'Target Calories must be more than 1000'}
           })}
           placeholder="Your Target Calories: e.g 2000"
         ></input>
-        {<p>{errors.targetCalories?.message}</p>}
+        {<p className="error-message">{errors.targetCalories?.message}</p>}
 
         <select {...register("diet", { required: true })}>
           <option disabled>Diet Type</option>

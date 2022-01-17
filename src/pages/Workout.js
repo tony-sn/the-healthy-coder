@@ -46,9 +46,9 @@ function Workout() {
             exercises.map((exercise, index) => {
               const { name, muscle_group, reps, session, weight } = exercise
               return (
-                <FlipCard>
-                  <FlipCardFront>
-                    <div key={uuidv4()}>
+                <div key={uuidv4()}>
+                  <FlipCard>
+                    <FlipCardFront>
                       <div className="ui segment column">
                         <div className="header">{name}</div>
                         <div className="meta">Muscle Group: {muscle_group}</div>
@@ -56,17 +56,17 @@ function Workout() {
                         <div className="meta">Session: {session}</div>
                         <div className="meta">Weight: {weight}</div>
                       </div>
-                    </div>
-                  </FlipCardFront>
-                  <FlipCardBack>
-                    <button
-                      className="ui red button removeBtn"
-                      onClick={() => removeItem(index)}
-                    >
-                      Remove
-                    </button>
-                  </FlipCardBack>
-                </FlipCard>
+                    </FlipCardFront>
+                    <FlipCardBack>
+                      <button
+                        className="ui red button removeBtn"
+                        onClick={() => removeItem(index)}
+                      >
+                        Remove
+                      </button>
+                    </FlipCardBack>
+                  </FlipCard>
+                </div>
               )
             })}
         </div>

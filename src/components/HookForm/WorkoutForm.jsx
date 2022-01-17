@@ -12,8 +12,6 @@ function WorkoutForm() {
     formState: { errors },
   } = useForm()
 
-  console.log(errors)
-  // const [result, setResult] = useState("")
   const onSubmit = data => console.log(data)
 
   return (
