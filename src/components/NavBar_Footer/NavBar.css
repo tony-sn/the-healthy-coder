@@ -66,12 +66,16 @@
 
 .myNavbar .hiddenLinks {
   display: none;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .myNavbar a {
   width: 70px;
   margin: 5px;
+}
+
+.myNavbar .hiddenLinks a {
+  width: 45px;
 }
 
 .myFooter {
@@ -102,13 +106,12 @@ footer {
 
 .socialMedia svg:hover{
   color: #0a58ca;
-
 }
 
 footer p {
   color: white;
   font-size: 14px;
-  opacity: 1;
+  display: inherit;
 }
 
 @media only screen and (max-width: 900px) {
@@ -117,7 +120,7 @@ footer p {
   }
 
   .myNavbar .leftSide, footer .leftSide {
-    padding-left: 50px;
+    padding-left: 5px;
   }
 
   footer .rightSide a {
@@ -125,7 +128,7 @@ footer p {
   }
 
   footer p{
-    opacity: 0;
+    display: none;
   }
 }
 
@@ -136,12 +139,13 @@ footer p {
 
   .myNavbar .hiddenLinks {
     display: inherit;
-    padding-left: 80px;
+    padding-left: 10px;
+    margin-left: 30px;
   }
 
   .myNavbar .hiddenLinks svg {
-    width: 60px;
-    margin: 7px;
+    width: 40px;
+    margin: 5px;
   }
 
   .myNavbar .rightSide{
@@ -153,6 +157,10 @@ footer p {
     justify-content: space-between;
     padding-right: 20px;
   }
+
+  .rightSide.socialMedia a {
+    margin-left: 6px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -163,4 +171,11 @@ footer p {
   .hiddenLinks {
     display: none;
   }
+}
+
+@media only screen and (min-width: 400px) {
+  .myNavbar .hiddenLinks {
+    margin-left: 60px;
+  }
+
 }

@@ -46,15 +46,27 @@ function Workout() {
             exercises.map((exercise, index) => {
               const { name, muscle_group, reps, session, weight } = exercise
               return (
-                <div key={uuidv4()} className="column">
-                  <div className="ui segment" onClick={() => removeItem(index)}>
-                    <div className="header">{name}</div>
-                    <div className="meta">Muscle Group: {muscle_group}</div>
-                    <div className="meta">Reps: {reps}</div>
-                    <div className="meta">Session: {session}</div>
-                    <div className="meta">Weight: {weight}</div>
-                  </div>
-                </div>
+                <FlipCard>
+                  <FlipCardFront>
+                    <div key={uuidv4()}>
+                      <div className="ui segment column">
+                        <div className="header">{name}</div>
+                        <div className="meta">Muscle Group: {muscle_group}</div>
+                        <div className="meta">Reps: {reps}</div>
+                        <div className="meta">Session: {session}</div>
+                        <div className="meta">Weight: {weight}</div>
+                      </div>
+                    </div>
+                  </FlipCardFront>
+                  <FlipCardBack>
+                    <button
+                      className="ui red button removeBtn"
+                      onClick={() => removeItem(index)}
+                    >
+                      Remove
+                    </button>
+                  </FlipCardBack>
+                </FlipCard>
               )
             })}
         </div>
@@ -73,3 +85,31 @@ function Workout() {
 }
 
 export default Workout
+
+function FlipCard({ children }) {
+  const [showBack, setShowBack] = useState(false)
+
+  return (
+    <div className="flip-card-outer" onClick={() => setShowBack(!showBack)}>
+      <div className={`flip-card-inner ${showBack ? "showBack" : ""}`}>
+        {children}
+      </div>
+    </div>
+  )
+}
+
+function FlipCardFront({ children }) {
+  return (
+    <div className="card front">
+      <div className="card-body">{children}</div>
+    </div>
+  )
+}
+
+function FlipCardBack({ children }) {
+  return (
+    <div className="card back">
+      <div className="card-body">{children}</div>
+    </div>
+  )
+}

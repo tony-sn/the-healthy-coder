@@ -38,13 +38,14 @@ function Home() {
             <div className="six wide right floated column">
               <img
                 src="https://www.mybakingaddiction.com/wp-content/uploads/2015/12/slice-of-sugar-cookie-cheesecake-735x1103.jpg.webp"
+                alt="homePage pic"
                 className="ui large bordered rounded image"
               />
             </div>
           </div>
           <div className="row">
             <div className="center aligned column">
-              <a className="ui primary button">Check Them Out</a>
+              <a href="https://spoonacular.com" className="ui primary button">Check Them Out</a>
             </div>
           </div>
         </div>

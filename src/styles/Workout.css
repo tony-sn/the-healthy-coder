@@ -19,17 +19,84 @@ button.red.button.removeBtn  {
   display: block;
   text-transform: uppercase;
   margin: 50px auto 20px;
-  /* padding-left: 30px; */
-  /* padding-right: 30px; */
   width: 300px;
   letter-spacing: 4px;
   font-weight: 600;
   font-size: 16px;
+}
 
+/* FlipCard */
+.flip-card-outer {
+  width: 300px;
+  height: 200px;
+  margin: 25px auto;
 
 }
 
+.ui.grid > .flip-card-outer{
+  padding-left: 0;
+  padding-right: 0;
+}
 
+.flip-card-outer .card {
+  border: none;
+}
 
+.flip-card-inner {
+  transform-style: preserve-3d;
+  transition: .5s linear .1s;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  border: 1px solid rgba(34,36,38,.15);
+  box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+  cursor: pointer;
+}
 
+.flip-card-inner.hover-trigger:hover {
+  transform: rotateY(180deg);
+}
 
+.flip-card-inner.showBack {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner .card.front {
+  margin-top: 10px;
+}
+
+.flip-card-inner .card.back button {
+  margin-top: 75px;
+  line-height: 1.5;
+}
+
+.flip-card-inner .card {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.flip-card-inner .card.front {
+  transform: rotateY(0);
+  color: #2d2d2d;
+}
+
+.flip-card-inner .card.back {
+  transform: rotateY(180deg);
+  background-color: #fff;
+  color: #2d2d2d;
+  /* border: 1px solid #2d2d2d; */
+}
+
+.flip-card-inner .ui.segment {
+  border: none;
+  /* border: 1px solid rgba(34,36,38,.15); */
+  box-shadow: none;
+  /* box-shadow: 0 1px 2px 0 rgba(34,36,38,.15); */
+}
+
+.card.back .card-body{
+  padding: 0;
+}
