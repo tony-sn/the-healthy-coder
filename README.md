@@ -1,10 +1,10 @@
-# The Healthy Coder
+# The Healthy Dev
 
-This project can be reached at [The Heathy Coder](https://thehealthycoder.netlify.app).
+This project can be reached at [The Heathy Dev](https://thehealthydev.netlify.app).
 
-![The Healthy Coder Landing Page](src/assets/img/TheHealthyCoderLandingPage.png)
+![The Healthy Dev Landing Page](src/assets/img/TheHealthyDevLandingPage.png)
 
-![The Healthy Coder API Result Page](src/assets/img/TheHealthyCoderPage4.png)
+![The Healthy Dev API Result Page](src/assets/img/TheHealthyDevPage4.png)
 
 ## Description
 
