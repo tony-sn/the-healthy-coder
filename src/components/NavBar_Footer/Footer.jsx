@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import TheHealthyCoder from "../../assets/img/TheHealthyCoderLogo.png"
+import TheHealthyDev from "../../assets/img/TheHealthyDevLogo.png"
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -14,9 +14,9 @@ function Footer() {
         <div className="container">
           <div className="leftSide">
             <Link to="/">
-              <img src={TheHealthyCoder} alt="Logo" />
+              <img src={TheHealthyDev} alt="Logo" />
             </Link>
-            <p className="copyright"> &copy; The Healthy Coder 2022</p>
+            <p className="copyright"> &copy; The Healthy Dev 2022</p>
           </div>
           <div className="rightSide socialMedia">
             <a href="https://www.facebook.com/"><FacebookIcon/></a>

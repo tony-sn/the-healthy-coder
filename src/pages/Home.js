@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 function ProgrammerQuote() {
   return (
@@ -10,14 +10,14 @@ function ProgrammerQuote() {
         sfdeljknesv."
       </p>
     </>
-  )
+  );
 }
 
 function Home() {
   return (
     <div className="home container">
       {" "}
-      <h1 className="title homeTitle">The Healthy Coder</h1>
+      <h1 className="title homeTitle">The Healthy Dev</h1>
       <div className="ui vertical stripe segment">
         <div className="ui middle aligned stackable grid container">
           <div className="row">
@@ -45,13 +45,15 @@ function Home() {
           </div>
           <div className="row">
             <div className="center aligned column">
-              <a href="https://spoonacular.com" className="ui primary button">Check Them Out</a>
+              <a href="https://spoonacular.com" className="ui primary button">
+                Check Them Out
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-import TheHealthyCoder from "../../assets/img/TheHealthyCoderLighterLogo.svg"
+import TheHealthyDev from "../../assets/img/TheHealthyDevLighterLogo.svg"
 import HomeIcon from "@material-ui/icons/Home"
 import InfoIcon from "@material-ui/icons/Info"
 import FitnessCenterIcon from "@material-ui/icons/FitnessCenter"
@@ -16,7 +16,7 @@ function NavBar() {
       <div className="container">
         <div className="leftSide">
           <Link to="/">
-            <img src={TheHealthyCoder} alt="Logo" />
+            <img src={TheHealthyDev} alt="Logo" />
           </Link>
           <div className="hiddenLinks">
             <Link to="/"><HomeIcon/></Link>
